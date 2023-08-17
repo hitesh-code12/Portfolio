@@ -1,0 +1,11 @@
+.empHistory{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.boxCard{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(105, 120, 234);
+    opacity: 0.7;
+}

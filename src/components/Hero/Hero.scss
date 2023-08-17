@@ -1,0 +1,32 @@
+.infoPortfolio {
+  opacity: 0.7;
+  width: 100%;
+  position: relative;
+  top: 168px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.profileImg {
+  position: relative;
+  right: 0;
+  img {
+    width: 300px;
+    height: 350px;
+    transition: 0.5s;
+  }
+  img:hover{
+    color: white;
+    box-shadow: 0 5px 15px #93d6f3;  }
+}
+.Info {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: black;
+}
+.Summary {
+  color: white;
+  width: 620px;
+}
