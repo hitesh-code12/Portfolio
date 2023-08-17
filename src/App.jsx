@@ -1,5 +1,6 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar, Hero, About, Experience, Tech, Feedbacks, Works, Contact, StarsCanvas } from "./components";
+import MainScreen from "./components/MainScreen";
 
 function App() {
   window.onscroll = function() {
@@ -14,22 +15,13 @@ function pageScroll() {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        {/* <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center"> */}
         <Navbar />
-        <Hero />
         </div>
-        
-        <About />
-        <Experience />
-        <Tech />
-        {/* <Works />
-        <Feedbacks /> */}
-        <div className="relative z-0">
-          {/* <Contact/>
-          <StarsCanvas/> */}
 
-        {/* </div> */}
-        </div>
+        <Routes>
+        <Route path="/Portfolio" element={<MainScreen />} />
+        </Routes>
+
 
     </BrowserRouter>
   );
